@@ -1,0 +1,143 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: content-box;
+}
+body{
+    background-color: #eb8034;
+    color: white;
+    font-family: 'Poppins', sans-serif;
+    min-height: 100vh;
+}
+
+header,form{
+    min-height: 20vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+header{
+    font-size: 1.5rem;
+    min-height: 25vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+form input, form button{
+    padding: 1rem;
+    border: none;
+    font-size: 2rem;
+    background: white;
+}
+form button{
+    color: #eb8034;
+}
+form button:hover{
+    background: #eb8034;
+    color: white;
+    border: 1px solid white;
+    border-radius: 3px;
+    cursor: pointer;
+    transition: all 0.2s ease;
+}
+
+.todo-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+.todo-list{
+    min-width: 40%;
+    list-style: none;
+}
+.todo{
+    margin: 0.5rem;
+    background-color: white;
+    color: black;
+    font-size: 1.5rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transition: all 0.5s ease;
+}
+.todo li{
+    flex: 1;
+    padding: 0  1rem;
+}
+
+.completed-btn, .trash-btn{
+    background: red;
+    color: white;
+    padding: 1rem;
+    border: none;
+    cursor: pointer;
+    font-size: 1.5rem;
+    
+}
+.completed-btn{
+    background: green;
+}
+.fa-trash, .fa-check{
+    pointer-events: none;
+}
+.kelar{
+    text-decoration: line-through;
+    opacity: 0.4;
+}
+.fall{
+    transform: translateY(8rem) rotate(30deg);
+    opacity: 0;
+}
+select{
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    outline: none;
+    border: none;
+    color: #eb8034;
+    padding: 1rem;
+    width: 10rem;
+    cursor: pointer;
+    z-index: 2;
+}
+.select{
+    margin: 1rem;
+    padding: 1rem;
+    position: relative;
+    overflow: hidden;
+
+}
+.select::after{
+    cursor: pointer;
+    pointer-events: none;
+    pointer-events: no;
+    content: "\25BC";
+    background: white;
+    color: #eb8034;
+    padding: 0.7rem;
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+    z-index: 1;
+    transition: all 0.2s ease;
+}
+.select:hover::after{
+    color: white;
+    background: #eb8034;
+    border: 1px solid whitesmoke;
+    
+}
+footer{
+    margin-top: 40vh;
+    margin-bottom: 10vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+footer a{
+    cursor: pointer;
+    color: black;
+    text-decoration: underline;
+}
