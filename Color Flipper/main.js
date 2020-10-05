@@ -18,8 +18,8 @@ let deviceHeight = window.innerHeight;
      if(count<6){
         span.innerHTML = `Chase the button!`;
         button.style.position = 'absolute';
-        button.style.left = ((Math.floor(Math.random()*(deviceWidth)))+('px'));
-        button.style.top = ((Math.floor(Math.random()*deviceHeight))+('px'));
+        button.style.left = ((Math.floor(Math.random()*(deviceWidth-100)))+('px'));
+        button.style.top = ((Math.floor(Math.random()*(deviceHeight-20)))+('px'));
         count++;
      }else{
         button.style.position = 'initial';
