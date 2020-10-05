@@ -6,29 +6,37 @@ let colorText = document.querySelector('span');
 const span = document.querySelector('.closure');
 //Event Listener
 button.addEventListener('mouseover', countMe);
-
+if(window.innerWidth < 500){
+    button.addEventListener('touchstart', countMe);
+}
 //Function
  let count = 0;
- 
  let time = 3;
+let deviceWidth = window.innerWidth;
+let deviceHeight = window.innerHeight;
  function countMe(){
      if(count<6){
         span.innerHTML = `Chase the button!`;
         button.style.position = 'absolute';
-        button.style.left = ((Math.floor(Math.random()*1000))+('px'));
-        button.style.top = ((Math.floor(Math.random()*500))+('px'));
+        button.style.left = ((Math.floor(Math.random()*(deviceWidth)))+('px'));
+        button.style.top = ((Math.floor(Math.random()*deviceHeight))+('px'));
         count++;
      }else{
         button.style.position = 'initial';
         button.addEventListener('click', changing);
-        span.innerHTML = `Now you can change the color, you got ${time} second`;
+        if(window.innerWidth<500){
+            button.addEventListener('touchstart', changing)
+        }
+        span.innerHTML = `Now you can change the color, you got 3 second`;
+
         setTimeout(() => {
-            count=0;
+            count = 0;
             span.innerHTML = '';
+            time = 3
         }, 3000);
- }
+
+    }
 }
- 
 
 
 function changing(){
@@ -44,5 +52,4 @@ function changing(){
         button.classList.remove('shake-me');
     },310);
 }
-
 

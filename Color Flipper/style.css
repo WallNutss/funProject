@@ -29,6 +29,7 @@ main{
     align-items: center;
     text-align: center;
     background-color: violet;
+    flex-wrap: wrap;
 }
 main p{
     font-size: 2em;
@@ -43,6 +44,18 @@ main button{
 }
 .shake-me{
     animation: shake .1s ease-in;
+}
+@media screen and (max-width:460px){
+    nav{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    nav ul{
+        justify-content: center;
+        margin-left:0 ;
+        padding-left: 0;
+    }
 }
 
 @keyframes shake{
@@ -65,5 +78,7 @@ main button{
         transform:translate(0);
     }
 }
+
+
 
 
