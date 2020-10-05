@@ -25,7 +25,7 @@ let deviceHeight = window.innerHeight;
         button.style.position = 'initial';
         button.addEventListener('click', changing);
         if(window.innerWidth<500){
-            button.addEventListener('touchstart', changing)
+            button.addEventListener('click', changing)
         }
         span.innerHTML = `Now you can change the color, you got 3 second`;
 
