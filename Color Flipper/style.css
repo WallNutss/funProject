@@ -1,0 +1,69 @@
+body{
+    margin: 0;
+    padding: 0;
+    font-family: Helvetica, arial, sans-serif;
+}
+.container{
+
+    margin: 0 auto;
+    height: 100vh;
+}
+nav{
+    display: flex;
+    justify-content: space-around;
+    box-shadow: 20px 50px 4px #111 ;
+}
+nav ul{
+    list-style: none;
+    display: flex;
+    align-items: center;
+    width: 40%;
+    justify-content: flex-end;
+    column-gap: 40%;
+}
+main{
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-color: violet;
+}
+main p{
+    font-size: 2em;
+}
+main button{
+    padding: 10px 50px;
+    outline: none;
+    font-size: 1.4rem;
+    background-color: transparent;
+    border: 3px solid black;
+    cursor: pointer;
+}
+.shake-me{
+    animation: shake .1s ease-in;
+}
+
+@keyframes shake{
+    0%{
+        transform: translate(0);
+    }
+    20%,
+    40%,
+    60%,
+    80%{
+        transform: translate(.8rem);
+    }
+    10%,
+    30%,
+    50%{
+        transform: translate(.2rem);
+    }
+    70%,
+    100%{
+        transform:translate(0);
+    }
+}
+
+
