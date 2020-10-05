@@ -1,2 +1,2 @@
 # funProject
-Anything goes in here is for fun stuff
+project for practicing javascript and making some project about mainly vanilla javascript
