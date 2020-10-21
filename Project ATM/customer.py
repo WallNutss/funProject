@@ -7,8 +7,10 @@ class customerList:
 
 
 
-def searching(numberdata,data):
+def searching(numberdata,dataCard, dataPIN):
    for i, j in enumerate(numberdata):
-      if j.randomCustomerCard == data:
+      if j.randomCustomerCard == dataCard and j.defPIN == dataPIN:
          code = i
          return code
+      else:
+         return None

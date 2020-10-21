@@ -11,6 +11,6 @@ class atmCard:
 
 
     def info(self):
-        return  'Halo, Terima Kasih '+ self.name + '\n' +'PIN anda: ' +str(self.defPIN) + ' (Mohon hati-hati dan merahasiakan PIN ini)' + '\nSaldo anda Rp. ' + str(self.defBalance) +'\n' + 'Customer Card: ' + str(self.randomCustomerCard)
+        return  'Halo, Terima Kasih '+ self.name + '\nSaldo awal anda Rp. ' + str(self.defBalance) +'\n' + 'Customer Card: ' + str(self.randomCustomerCard)
 
 
