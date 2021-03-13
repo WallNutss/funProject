@@ -1,0 +1,8 @@
+.nav-container{
+    align-items: center;
+    background-color: red;
+}
+
+#catalog-produk-list{
+    list-style: none;
+}
