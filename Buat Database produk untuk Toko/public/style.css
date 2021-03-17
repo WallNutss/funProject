@@ -6,3 +6,10 @@
 #catalog-produk-list{
     list-style: none;
 }
+
+@media screen and (max-width: 600px) {
+    .search-container input{
+        width: 50%;
+        margin-right: 3%;
+    }
+  }

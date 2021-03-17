@@ -32,7 +32,7 @@
     <br>
     <div class="container search-container">
         <form autocomplete="off" id="form-search" class="form-inline">
-                <input type="number" class="form-control mr-sm-2" id="barcode-number" placeholder="Nomor Barcode" required><br>
+                <input type="number" class="form-control" id="barcode-number" placeholder="Nomor Barcode" required><br>
                 <button type="submit" class="btn btn-success">
                     <i class="fas fa-search"></i>
                 </button>
@@ -100,27 +100,8 @@
     <script src="https://www.gstatic.com/firebasejs/7.17.1/firebase-firestore.js"></script>
     <script src="https://www.gstatic.com/firebasejs/7.17.1/firebase-database.js"></script>
 
-    <script>
-    // Your web app's Firebase configuration
-    // For Firebase JS SDK v7.20.0 and later, measurementId is optional
-    var firebaseConfig = {
-        apiKey : "AIzaSyD1-H3jw5NiD0j8Cu4-oZB8tL-RO56gWWM",
-        authDomain : "databaseberkat-21d60.firebaseapp.com",
-        projectId : "databaseberkat-21d60",
-        storageBucket : "databaseberkat-21d60.appspot.com",
-        messagingSenderId : "1000809437922",
-        appId: "1:1000809437922:web:2d2164035fbd67c3f39cbb",
-        measurementId : "G-TTKKHFBWE6",
-        databaseURL : "https://databaseberkat-21d60-default-rtdb.firebaseio.com/"
-    };
-    // Initialize Firebase
-    firebase.initializeApp(firebaseConfig);
-
-    const auth = firebase.auth();
-    const db = firebase.firestore();
-
-    </script>
-
+   
+    <script src="src.js"></script>
     <script src="login.js"></script>
     <script src="app.js"></script>
 
