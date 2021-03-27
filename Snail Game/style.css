@@ -1,0 +1,55 @@
+body{
+    margin: 0;
+    padding: 0;
+    font-size: 1.5rem;
+    font-family: 'Noto Sans JP', sans-serif;
+}
+nav{
+    background-color: #fff;
+    box-shadow: 1px 2px 7px #111;
+    margin: 0;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    color: rgb(158, 157, 157);
+}
+nav a{
+    margin: 0;
+    color: rgb(32, 193, 241);
+    text-decoration: none;
+}
+
+.snail{
+    display: grid;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+.fighters{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.choose-button{
+    margin: 0 auto;
+    text-align: center;
+}
+.choose-button button{
+    margin: 0 20px;
+    padding:8px 30px;;
+    background-color:rgb(241, 58, 58) ;
+    outline: none;
+    border: 1px solid black;
+    border-radius: 6px;
+    cursor: pointer;
+}
+.choose-button button:hover{
+    background-color: rgb(47, 247, 124);
+}
+
+.hidden{
+    display: none;
+}
+.race-track{
+    display: flex;
+}
